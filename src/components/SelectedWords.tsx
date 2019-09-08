@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import { ClearWordAction } from "../actions/wordActions";
-import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Button from 'react-bootstrap/Button';
 
 type propsParam = {

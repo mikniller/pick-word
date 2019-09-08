@@ -1,6 +1,6 @@
 import { WordActionTypes, SET_WORD, CLEAR_WORDS } from '../constants/actionTypes'
 import IWordState from './types'
-import { danishCategories, englishCategories } from '../data/danish';
+import { danishCategories } from '../data/danish';
 
 let initialState : IWordState = {
   selectedWords: [],

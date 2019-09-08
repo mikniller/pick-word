@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './layout/Header';
 import Main from './layout/Main';
 import Footer from './layout/Footer';
-import { danishCategories } from './data/danish';
 import { AppState } from './store'
 import { CategoryModel } from './models/Category';
 import { connect } from 'react-redux';
