@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './layout/Header';
+import Main from './layout/Main';
+import Footer from './layout/Footer';
+import { danishCategories } from './data/danish';
+import { AppState } from './store'
+import { CategoryModel } from './models/Category';
+import { connect } from 'react-redux';
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+interface AppProps {
+  categories: CategoryModel[]
 }
 
-export default App;
+
+
+class App extends React.Component<AppProps> {
+  constructor(props: AppProps){
+    super(props);
+    this.state = { };
+}
+  render() {
+  return (
+    <div className="App">
+      <Header />
+      <Main list={this.props.categories}/>
+      <Footer/>
+    </div>
+  );
+  }
+}
+
+const mapStateToProps = (state: AppState) => ({
+  categories: state.word.categories,
+})
+
+export default connect(mapStateToProps)(App);
+

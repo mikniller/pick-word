@@ -1,13 +1,171 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #f1e3dd;
+	color: black;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  height: 100%;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.wrap {
+  height: 85%;
+  /* background-color:#bccad6; */
+  overflow:auto;
+}
+
+.root {
+  height:100vh;
+}
+
+
+.App {
+  height:100vh;
+}
+
+.main {
+  overflow:auto;
+  padding-left:5px;
+  padding-right:5px;
+  padding:10px;
+  
+}
+
+.navbar {
+  background: red;
+}
+
+.footer {
+  padding:20px;
+ 
+
+  width:auto;
+}  
+
+.mg-1-right {
+  margin-right:10px;
+}
+
+.mg-1-left {
+  margin-left:10px;
+}
+.mg-1 {
+  margin:10px;
+}
+.mg-1-top {
+  margin-top:10px;
+}
+.mg-1-bottom {
+  margin-bottom:10px;
+}
+
+.word {
+  background-color:#5987BF;
+  word-wrap: none;
+  padding:20px;
+  font-size:1.5rem;
+  text-align:center;
+  margin:2px;
+  height:100%;
+  color:#fff;
+  box-shadow: 1px 1px 2px grey;
+
+  border-radius: .25rem;
+}
+
+.wordContainer {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.tab-content {
+  border:1px solid transparent !important;
+  border-radius: .25rem;
+}
+ 
+
+
+.nav-tabs {
+ 
+  border:1px solid transparent !important;
+}
+
+.nav-tabs .nav-link {
+  background-color:#0B4A99 !important;
+  color:#bbb;
+  padding:10px 40px;
+  font-size:1.5rem;
+  border-radius: .25rem;
+  margin-right:10px;
+  margin-bottom:10px !important;
+  box-shadow: 1px 1px 2px grey;
+
+}
+
+.nav-tabs .nav-link.active 
+{
+  color:#fff !important;
+  background-color:rgb(29, 69, 126) !important;
+  font-size:1.5rem;
+  border:3px solid #007bff !important;
+ 
+}
+
+.selected-words-container {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selected-words {
+  
+  font-size:1.6rem;
+  color:black; 
+  width:80%;
+  min-height:60px;
+  padding:10px;
+  border-radius: .25rem;
+  background-color:#5987BF;
+  color:#fff;
+  box-shadow: 1px 1px 2px grey;
+}
+
+.btn.btn-full{
+  width:18%;
+  margin-left:2%;
+ 
+  border:1px solid #333;
+  font-size:1.6rem;
+ 
+ 
+  min-height:60px;
+  padding:5px;
+  background-color:#fff;
+  box-shadow: 1px 1px 2px grey;
+
+  background-color:#0B4A99 !important;
+  color:#fff;
+}
+
+.fade {
+  animation: fade-in-keyframes 1s;
+}
+@keyframes fade-in-keyframes {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+/*
+ colors 
+ #0B4A99
+ #0B192B
+ #1B2B3F
+ #5987BF
+ #70B0FF
+
+*/
